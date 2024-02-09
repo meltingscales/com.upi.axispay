@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="end|bottom|center" android:id="@id/add_upi_contact" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/add_upi_id_contact" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:textAllCaps="false" android:layout_alignParentStart="true" style="@style/ButtonSingle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/add_upi_contact">
+        <ProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimary" android:id="@id/empty_view" android:padding="@dimen/APKTOOL_DUMMY_228" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_contact_added_fav" android:layout_centerInParent="true" style="@style/UPITextView" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/vpa_list" android:paddingBottom="@dimen/APKTOOL_DUMMY_f9" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</RelativeLayout>

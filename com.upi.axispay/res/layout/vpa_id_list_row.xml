@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_228" android:id="@id/text_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_22c" android:text="@string/axis_bank" android:layout_toRightOf="@id/bank_pop_image" android:layout_centerVertical="true" style="@style/TextViewNormalStyle" />
+    <View android:id="@id/view" android:background="@color/text_single_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/text_vpa" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

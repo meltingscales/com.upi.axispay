@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_227"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/dialog_close" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMY_22c" android:src="@drawable/APKTOOL_DUMMY_a2" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228">
+        <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/set_upi_pin" android:layout_weight="1.0" style="@style/DialogHeading" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/dialog_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_f5" android:src="@drawable/error_icon_grey" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/secondary_text" android:gravity="center" android:layout_gravity="center" android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:text="@string/upi_pin_to_continue" style="@style/SubTitleStyleBlack" />
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/button_ok" android:background="@color/colorPrimary" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/okay" android:layout_weight="1.0" android:textAllCaps="false" />
+</LinearLayout>

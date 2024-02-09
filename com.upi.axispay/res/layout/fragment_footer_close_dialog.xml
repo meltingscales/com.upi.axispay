@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialog_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/close_block" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:elevation="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228">
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_251" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/dialog_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/confirmation" android:layout_weight="1.0" style="@style/DialogHeading" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:ellipsize="none" android:gravity="center" android:id="@id/dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22d" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_22d" android:text="@string/logout_message" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24e" android:textStyle="italic" android:textColor="@color/black" android:ellipsize="none" android:gravity="center" android:id="@id/dialog_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22d" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="@string/logout_message" />
+    </LinearLayout>
+</RelativeLayout>

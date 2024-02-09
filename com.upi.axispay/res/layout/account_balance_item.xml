@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radio_balance_item" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/colorPrimary" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/balance_line1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toEndOf="@id/radio_balance_item">
+        <ImageView android:id="@id/bank_icon" android:layout_width="@dimen/APKTOOL_DUMMY_5d" android:layout_height="@dimen/APKTOOL_DUMMY_5d" android:src="@drawable/APKTOOL_DUMMY_70" />
+        <TextView android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/bank_name" android:paddingLeft="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1234567890 " android:lines="1" />
+    </LinearLayout>
+    <TextView android:textColor="@color/black" android:id="@id/bank_acc_no" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1234567890 " android:lines="1" android:layout_below="@id/balance_line1" android:layout_toEndOf="@id/radio_balance_item" />
+</RelativeLayout>

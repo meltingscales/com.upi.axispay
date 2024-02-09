@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:background="@color/colorPrimaryDark" android:fadingEdgeLength="1.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:elevation="1.0dip" app:theme="@style/Base.ThemeOverlay.AppCompat.Light"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.ActionMenuView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" />
+    <androidx.appcompat.widget.ActionMenuView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="?android:actionBarSize" android:text="@string/terms_conditions" />
+    <ImageView android:layout_gravity="right" android:id="@id/action_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:src="@drawable/APKTOOL_DUMMY_a3" />
+</androidx.appcompat.widget.Toolbar>

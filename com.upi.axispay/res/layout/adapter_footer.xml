@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view" android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_229" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_help" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:background="@drawable/APKTOOL_DUMMY_f7" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24e" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22c" android:text="@string/help" />
+        </LinearLayout>
+        <View android:background="@color/grey" android:layout_width="@dimen/APKTOOL_DUMMY_f6" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginRight="@dimen/APKTOOL_DUMMY_229" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_logout" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:background="@drawable/APKTOOL_DUMMY_1df" android:layout_width="20.0dip" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24e" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:text="@string/menu_logou" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/grey_light" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/secondary_text" android:layout_gravity="center" android:id="@id/version" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_22c" android:text="@string/version_string" />
+</LinearLayout>

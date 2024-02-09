@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/llayout" android:background="@drawable/top_corner_radius" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radioGroup" android:background="@drawable/background_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22d" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22b" android:layout_marginRight="@dimen/APKTOOL_DUMMY_22d" android:checkedButton="@null" android:animateLayoutChanges="true">
+            <RadioButton android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/button_vpa_connection" android:background="@drawable/burgundy_button_style" android:layout_width="360.0dip" android:layout_height="40.0dip" android:layout_margin="4.0dip" android:checked="true" android:button="@null" android:text="@string/upi_id" android:layout_weight="1.0" />
+            <RadioButton android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/button_ifsc_connection" android:layout_width="360.0dip" android:layout_height="40.0dip" android:layout_margin="4.0dip" android:checked="true" android:button="@null" android:text="@string/ifsc" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/llayout" android:animateLayoutChanges="true">
+        <FrameLayout android:id="@id/fragment_connection" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/radioGroup" />
+    </LinearLayout>
+</RelativeLayout>

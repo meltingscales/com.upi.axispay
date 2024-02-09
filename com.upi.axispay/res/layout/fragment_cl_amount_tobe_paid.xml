@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22b" android:layout_marginTop="@dimen/APKTOOL_DUMMY_f5" android:layout_marginRight="@dimen/APKTOOL_DUMMY_22b" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_22b" android:translationZ="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_227">
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:text="@string/current_billed_amount" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/colorPrimaryDark" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:text="₹ 3000" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228">
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/side_menu_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/minimum_amount_due" android:layout_weight="0.7" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/side_menu_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1000" android:layout_weight="0.3" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228">
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/side_menu_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/due_date" android:layout_weight="0.7" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/side_menu_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="04-10-2018" android:layout_weight="0.3" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

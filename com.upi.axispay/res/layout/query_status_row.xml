@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/query_row" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.pkmmte.view.CircularImageView android:id="@id/tran_icon" android:layout_width="@dimen/APKTOOL_DUMMY_f9" android:layout_height="@dimen/APKTOOL_DUMMY_f9" android:layout_margin="@dimen/APKTOOL_DUMMY_228" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_weight="0.6">
+            <TextView android:id="@id/tran_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/sent_to" style="@style/SubTitleStyleSmall" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/black" android:ellipsize="end" android:id="@id/text_receiver_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/black" android:ellipsize="end" android:id="@id/text_receiver_vpa" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_229" android:maxLines="1" android:singleLine="true" />
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/transaction_id_title" style="@style/SubTitleStyleSmall" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/black" android:id="@id/text_transaction_id" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_229" android:text="@string/transaction_id_hint" />
+            <TextView android:id="@id/transaction_date" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" style="@style/SubTitleStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_weight="0.4">
+            <TextView android:textStyle="bold" android:id="@id/text_tran_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/UPITextView" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24e" android:textStyle="bold" android:textColor="@color/Green" android:ellipsize="end" android:id="@id/text_tran_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/query_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_22c" android:layout_weight="0.4">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f3" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:layout_marginRight="@dimen/APKTOOL_DUMMY_f3">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/green_tick_query_status" android:layout_weight="0.0" />
+                <View android:background="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="1.5dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/query_status_in_progress_image" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/pink_dot_query_status" android:layout_weight="0.0" />
+                <View android:background="@color/colorPrimaryDark" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="1.5dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/query_status_closed" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/grey_dot_query_status" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22f" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/initiated" style="@style/SubTitleStyle" />
+                    <TextView android:id="@id/query_initiated_date" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="12/11/16" style="@style/SubTitleStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/in_progress" style="@style/SubTitleStyle" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="12/11/16" style="@style/SubTitleStyle" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f9" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/answered" style="@style/SubTitleStyle" />
+                    <TextView android:id="@id/query_answered_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="12/11/16" style="@style/SubTitleStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <Button android:textSize="@dimen/APKTOOL_DUMMY_24e" android:textColor="@color/white" android:layout_gravity="center" android:background="@drawable/set_vpa_layout" android:paddingLeft="@dimen/APKTOOL_DUMMY_227" android:paddingRight="@dimen/APKTOOL_DUMMY_227" android:layout_width="wrap_content" android:layout_height="@dimen/APKTOOL_DUMMY_f3" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_228" android:text="@string/view_reply" android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

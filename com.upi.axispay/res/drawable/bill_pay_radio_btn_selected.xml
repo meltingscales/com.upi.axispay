@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+            <padding android:left="5.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+            <stroke android:width="2.0dip" android:color="@color/vpa_reciever_icon" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/vpa_reciever_icon" />
+            <size android:height="20.0dip" android:width="20.0dip" />
+        </shape>
+    </item>
+</layer-list>

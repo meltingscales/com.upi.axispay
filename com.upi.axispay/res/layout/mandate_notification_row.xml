@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_row" android:background="@drawable/rounded_white_stroke_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <LinearLayout android:gravity="center" android:background="@drawable/right_round_dark_primary" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.39">
+            <ImageView android:id="@id/image_items" android:background="@drawable/man_rupee" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="40.0dip" android:layout_height="45.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.61">
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24f" android:textStyle="bold" android:textColor="@color/colorPrimary" android:id="@id/text_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.3">
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/grey_dark" android:id="@id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/grey" android:id="@id/text_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_250" android:textStyle="bold" android:textColor="@color/Green" android:id="@id/text_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="@string/verified_merchant" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24f" android:textColor="@color/colorPrimaryDark" android:gravity="right" android:layout_gravity="end" android:id="@id/text_amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="₹ 2400" android:layout_weight="0.7" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_buttons" android:background="@color/white" android:padding="@dimen/APKTOOL_DUMMY_22c" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:weightSum="3.0" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button_block" android:background="@drawable/button_manage_style" android:paddingLeft="@dimen/APKTOOL_DUMMY_229" android:paddingRight="@dimen/APKTOOL_DUMMY_229" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:gravity="center" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:src="@drawable/man_block" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimaryDark" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:text="@string/blocks" android:textAllCaps="false" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_decline" android:background="@drawable/button_manage_style" android:paddingLeft="@dimen/APKTOOL_DUMMY_229" android:paddingRight="@dimen/APKTOOL_DUMMY_22c" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_231" android:layout_weight="1.0">
+                    <ImageView android:id="@id/img" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:src="@drawable/man_decline_button" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimaryDark" android:gravity="center_vertical" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:text="@string/decline" android:textAllCaps="false" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/button_approve" android:background="@drawable/button_manage_style" android:paddingLeft="@dimen/APKTOOL_DUMMY_229" android:paddingRight="@dimen/APKTOOL_DUMMY_229" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_231" android:layout_weight="1.0">
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:src="@drawable/APKTOOL_DUMMY_56" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimaryDark" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:text="@string/accept" android:textAllCaps="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

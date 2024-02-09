@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/billpay_grid" android:layout_width="wrap_content" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/grid_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22c" android:src="@drawable/APKTOOL_DUMMY_e1" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24e" android:textColor="@color/black" android:gravity="bottom" android:layout_gravity="center" android:id="@id/grid_name" android:paddingBottom="@dimen/APKTOOL_DUMMY_f8" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_f8" android:text="@string/more_coming_soon" android:textAlignment="center" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/set_vpa_success_background" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="@string/congratulations" style="@style/DialogHeading" />
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimaryDark" android:id="@id/success_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_f5" android:text="@string/account_linked" android:layout_below="@id/dialog_title" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:layout_below="@id/success_message" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_upiid" style="@style/SubTitleStyle" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimaryDark" android:id="@id/text_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hjhkjk@axisbank" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/white" android:id="@id/button_done" android:background="@drawable/background_button_dark_rounded" android:layout_width="120.0dip" android:layout_height="35.0dip" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_228" android:text="@string/done" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+</RelativeLayout>

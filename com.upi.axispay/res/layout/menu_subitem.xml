@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/side_menu_text" android:gravity="center_vertical" android:id="@id/text_subitem" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_apply" style="@style/TextViewNormalStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

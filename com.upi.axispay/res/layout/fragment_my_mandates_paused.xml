@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/rounded_white_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:translationZ="@dimen/APKTOOL_DUMMY_228"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24f" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="end" android:id="@id/button_confirm" android:background="@color/colorPrimaryDark" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:text="@string/m_confirm" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:textAllCaps="false" android:layout_alignParentStart="true" style="@style/ButtonSingle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_confirm" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/layout_autopay_image" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="right" android:id="@id/share_qr" android:paddingRight="@dimen/APKTOOL_DUMMY_22e" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/shareicon" />
+                <ImageView android:layout_gravity="center" android:id="@id/image_success" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_251" android:textStyle="bold" android:textColor="@color/Green" android:gravity="center" android:id="@id/trans_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_22b" android:text="@string/confirmation_madate" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/black" android:gravity="center" android:id="@id/trans_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_228" android:text="@string/please_ensure_all_details_are_correct" />
+            </LinearLayout>
+            <View android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/m_amount" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_251" android:textColor="@color/colorPrimary" android:id="@id/amount" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/recipient_name" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/payee_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/recipients_ID" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/payee_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/m_from_date" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/fromdate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/m_to_date" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/todate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/frequency" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/tv_frequency" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/debit_date" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/debit_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/debit_account" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/debit_acc_no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/paymentid_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/transaction_id" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/payment_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/umn_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/umn_id" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/umn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/payments_day" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/payment_day" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/before_first_of_every_month" android:layout_weight="1.1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f5" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:weightSum="2.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/grey_light" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/m_description" android:layout_weight="0.9" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/black" android:id="@id/description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

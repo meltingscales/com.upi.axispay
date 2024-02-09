@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:textColor="@color/white" android:id="@id/button_confirm" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentBottom="true" style="@style/ButtonSingle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_confirm" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_select_bank" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:backgroundTint="@color/grey_dark">
+                <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.8">
+                    <EditText android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColorHint="@color/grey" android:id="@id/spinner_select_bank" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:hint="@string/select_bank" android:drawableRight="@drawable/spin_icon" android:backgroundTint="@color/grey_dark" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text_intro">
+                <EditText android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColorHint="@color/grey" android:id="@id/edit_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_228" android:hint="@string/enter_name" android:maxLines="1" android:singleLine="true" android:maxLength="@integer/max_account_no_lenght" android:digits="@string/alphanumeric_numbs" android:inputType="text" android:imeOptions="actionNext" android:backgroundTint="@color/grey_dark" android:importantForAutofill="noExcludeDescendants" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text_intro">
+                <EditText android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColorHint="@color/grey" android:id="@id/editaccount_no" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:hint="@string/ente_account_number" android:maxLength="@integer/max_account_no_lenght" android:inputType="number" android:backgroundTint="@color/grey_dark" android:importantForAutofill="noExcludeDescendants" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ifsc_layout" android:paddingLeft="@dimen/APKTOOL_DUMMY_231" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:layout_below="@id/text_intro">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3">
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_254" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/enter_ifsc_code" />
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.7">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/bank_logo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/APKTOOL_DUMMY_70" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/black" android:gravity="left" android:id="@id/ifsc_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <EditText android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColorHint="@color/grey" android:id="@id/edit_ifsc1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/enter_ifsc_code" android:maxLines="1" android:maxLength="11" android:digits="@string/alphanumeric_numbs" android:imeOptions="actionDone" android:backgroundTint="@color/grey_dark" android:importantForAutofill="noExcludeDescendants" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/text_intro">
+                <EditText android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textStyle="bold" android:textColorHint="@color/grey" android:id="@id/edit_ifsc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:hint="@string/enter_ifsc_code" android:maxLength="11" android:digits="@string/alphanumeric_numbs" android:imeOptions="actionDone" android:backgroundTint="@color/grey_dark" android:importantForAutofill="noExcludeDescendants" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_contact" android:paddingLeft="@dimen/APKTOOL_DUMMY_22e" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_228">
+                <CheckBox android:theme="@style/MyCheckBox" android:layout_gravity="center" android:id="@id/favourite_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/favourite_selector" android:layout_centerVertical="true" android:scaleX="1.0" android:scaleY="1.0" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:text="@string/make_favourite" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

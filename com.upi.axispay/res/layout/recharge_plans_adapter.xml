@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_70" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.6">
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 9666799064" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:id="@id/tv2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="120mb" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="validity: " />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:id="@id/tv3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="24days" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:id="@id/tv4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Last recharge on 26/08/2017" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <TextView android:layout_gravity="center" android:background="@drawable/rupee_background" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="220" />
+    </LinearLayout>
+</LinearLayout>

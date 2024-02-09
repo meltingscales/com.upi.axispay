@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/acc_list_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:gravity="center" android:id="@id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_24b" android:text="@string/account_add" android:layout_centerInParent="true" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/account_list" android:paddingBottom="@dimen/APKTOOL_DUMMY_22a" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/add_account" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_22e" android:src="@drawable/APKTOOL_DUMMY_24a" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:elevation="8.0dip" app:fabSize="normal" />
+</RelativeLayout>

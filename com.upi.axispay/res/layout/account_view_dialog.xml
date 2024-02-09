@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bottom_round_corners" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/account_view" android:paddingLeft="@dimen/APKTOOL_DUMMY_229" android:paddingRight="@dimen/APKTOOL_DUMMY_229" android:paddingBottom="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/close_icon" android:padding="@dimen/APKTOOL_DUMMY_22e" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/tra_failed" android:layout_alignParentRight="true" />
+</RelativeLayout>

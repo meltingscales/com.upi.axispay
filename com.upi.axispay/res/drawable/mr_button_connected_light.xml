@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_133" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_135" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_137" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_139" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_13b" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_13d" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_13f" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_141" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_143" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_145" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_147" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_149" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_14b" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_14d" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_14f" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_151" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_153" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_155" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_157" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_159" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_15b" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_15d" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_15f" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_161" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_163" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_165" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_167" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_169" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_16b" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_16d" />
+    <item android:duration="42" android:drawable="@drawable/APKTOOL_DUMMY_16f" />
+</animation-list>

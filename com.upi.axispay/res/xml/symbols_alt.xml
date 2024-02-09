@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="10.000002%p" android:keyHeight="46.0dip" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="126" android:keyEdgeFlags="left" android:keyLabel="~" />
+        <Key android:codes="177" android:keyLabel="±" />
+        <Key android:codes="215" android:keyLabel="×" />
+        <Key android:codes="247" android:keyLabel="÷" />
+        <Key android:codes="8226" android:keyLabel="•" />
+        <Key android:codes="176" android:keyLabel="°" />
+        <Key android:codes="96" android:keyLabel="`" />
+        <Key android:codes="180" android:keyLabel="´" />
+        <Key android:codes="123" android:keyLabel="{" />
+        <Key android:codes="125" android:keyLabel="}" />
+    </Row>
+    <Row>
+        <Key android:codes="169" android:keyEdgeFlags="left" android:keyLabel="©" />
+        <Key android:codes="163" android:keyLabel="£" />
+        <Key android:codes="8364" android:keyLabel="€" />
+        <Key android:codes="94" android:keyLabel="^" />
+        <Key android:codes="174" android:keyLabel="®" />
+        <Key android:codes="165" android:keyLabel="¥" />
+        <Key android:codes="95" android:keyLabel="_" />
+        <Key android:codes="61" android:keyLabel="=" />
+        <Key android:codes="91" android:keyLabel="[" />
+        <Key android:codes="93" android:keyLabel="]" />
+    </Row>
+    <Row>
+        <Key android:codes="-6" android:popupCharacters="2" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="161" android:keyLabel="¡" />
+        <Key android:codes="60" android:keyLabel="@string/shield_lt" />
+        <Key android:codes="62" android:keyLabel="@string/shield_gt" />
+        <Key android:codes="162" android:keyLabel="¢" />
+        <Key android:codes="124" android:keyLabel="@string/shield_vbar" />
+        <Key android:codes="92" android:keyLabel="\\" />
+        <Key android:codes="191" android:keyLabel="¿" />
+        <Key android:codes="-5" android:popupCharacters="2" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/APKTOOL_DUMMY_27f" />
+    </Row>
+    <Row android:verticalGap="0.49999952%p" android:rowEdgeFlags="bottom">
+        <Key android:codes="-4" android:popupCharacters="2" android:keyEdgeFlags="left" android:keyIcon="@drawable/APKTOOL_DUMMY_280" />
+        <Key android:codes="-2" android:popupCharacters="2" android:keyLabel="ABC" />
+        <Key android:codes="32" android:popupCharacters="3" android:isRepeatable="true" android:keyIcon="@drawable/APKTOOL_DUMMY_284" />
+        <Key android:codes="44" android:keyLabel="," />
+        <Key android:codes="46" android:keyLabel="." />
+        <Key android:codes="10" android:popupCharacters="2" android:keyEdgeFlags="right" android:keyIcon="@drawable/APKTOOL_DUMMY_281" />
+    </Row>
+</Keyboard>

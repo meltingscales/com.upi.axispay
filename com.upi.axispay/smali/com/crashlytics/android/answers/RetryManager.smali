@@ -1,0 +1,122 @@
+.class public Lcom/crashlytics/android/answers/RetryManager;
+.super Ljava/lang/Object;
+.source "AxisPay"
+
+
+# static fields
+.field private static final NANOSECONDS_IN_MS:J
+
+
+# instance fields
+.field public lastRetry:J
+
+.field private retryState:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    const-class v0, Lcom/crashlytics/android/answers/RetryManager;
+
+    const v1, 0x7a
+
+    invoke-static {v0, v1}, Lmyunmn/ao;->a(Ljava/lang/Class;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lio/fabric/sdk/android/services/concurrency/internal/RetryState;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const v0, 0x2ba
+
+    invoke-static {v0}, Lmyunmn/ao;->a(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 3
+    iput-object p1, p0, Lcom/crashlytics/android/answers/RetryManager;->retryState:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public canRetry(J)Z
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->retryState:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    invoke-virtual {v0}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->getRetryDelay()J
+
+    move-result-wide v0
+
+    const-wide/32 v2, 0xf4240
+
+    mul-long/2addr v0, v2
+
+    .line 2
+    iget-wide v2, p0, Lcom/crashlytics/android/answers/RetryManager;->lastRetry:J
+
+    sub-long/2addr p1, v2
+
+    cmp-long p1, p1, v0
+
+    if-ltz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public recordRetry(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/crashlytics/android/answers/RetryManager;->lastRetry:J
+
+    .line 2
+    iget-object p1, p0, Lcom/crashlytics/android/answers/RetryManager;->retryState:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    invoke-virtual {p1}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->nextRetryState()Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/crashlytics/android/answers/RetryManager;->retryState:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    return-void
+.end method
+
+.method public reset()V
+    .locals 2
+
+    const-wide/16 v0, 0x0
+
+    .line 1
+    iput-wide v0, p0, Lcom/crashlytics/android/answers/RetryManager;->lastRetry:J
+
+    .line 2
+    iget-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->retryState:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    invoke-virtual {v0}, Lio/fabric/sdk/android/services/concurrency/internal/RetryState;->initialRetryState()Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/crashlytics/android/answers/RetryManager;->retryState:Lio/fabric/sdk/android/services/concurrency/internal/RetryState;
+
+    return-void
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228">
+                <TextView android:gravity="center" android:id="@id/dialog_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/thank_you" android:layout_weight="1.0" style="@style/DialogHeading" />
+            </LinearLayout>
+            <View android:background="@color/colorDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:gravity="center" android:paddingLeft="@dimen/APKTOOL_DUMMY_f3" android:paddingRight="@dimen/APKTOOL_DUMMY_f3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="@string/your_query_has_been_raised_successfully" style="@style/SubTitleStyleBlack" />
+            <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:gravity="center" android:id="@id/text_docket_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="\ 21342343345545" style="@style/SubTitleStyleBlack" />
+            <Button android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/button_home" android:background="@drawable/black_button_style" android:paddingLeft="@dimen/APKTOOL_DUMMY_f9" android:paddingRight="@dimen/APKTOOL_DUMMY_f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_f3" android:text="@string/home" android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

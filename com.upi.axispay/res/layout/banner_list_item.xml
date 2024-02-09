@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_229"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/secondary_text" android:gravity="center" android:id="@id/banner_text" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="dhjkfd" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

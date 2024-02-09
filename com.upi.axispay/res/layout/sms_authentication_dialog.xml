@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228">
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24f" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/dialog_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/authentication" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/dialog_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_a2" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/colorDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColor="@color/colorTextSecondary" android:layout_gravity="center" android:padding="@dimen/APKTOOL_DUMMY_227" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sms_auth_text1" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_22c">
+        <RadioGroup android:id="@id/myRadioGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/submit_btn" android:background="@drawable/black_button_style" android:paddingLeft="@dimen/APKTOOL_DUMMY_f9" android:paddingRight="@dimen/APKTOOL_DUMMY_f9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_227" android:text="@string/okay" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/colorTextSecondary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:text="@string/sms_auth_text2" style="@style/UPITextView" />
+</LinearLayout>

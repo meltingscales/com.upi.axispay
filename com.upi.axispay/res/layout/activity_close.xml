@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/toolbar_logo_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_63" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/secondary_text" android:gravity="center" android:id="@id/exit_msg" android:padding="@dimen/APKTOOL_DUMMY_228" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/something_went_wrong" android:layout_centerInParent="true" />
+    <Button android:textColor="@color/positive_button_text_selector" android:id="@id/btn_exit" android:background="@drawable/background_button_dark_rounded" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:minHeight="0.0dip" android:text="@string/exit" android:layout_below="@id/exit_msg" android:layout_centerHorizontal="true" />
+    <ImageView android:background="@color/colorPrimary" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_5e" android:layout_alignParentBottom="true" />
+</RelativeLayout>

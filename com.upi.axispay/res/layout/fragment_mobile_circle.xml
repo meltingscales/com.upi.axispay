@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/rounded_white_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22a" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_228" android:layout_below="@id/stepper_indicator" android:translationZ="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_layout" android:padding="@dimen/APKTOOL_DUMMY_22b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:src="@drawable/APKTOOL_DUMMY_269" />
+        <EditText android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textColorHint="@color/colorTextSecondary" android:id="@id/search_locality" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:hint="@string/search_locality" android:maxLines="1" android:singleLine="true" android:imeOptions="actionDone" />
+    </LinearLayout>
+    <View android:id="@id/view" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/search_layout" />
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="5.0dip" android:scrollbarThumbVertical="@color/grey" android:id="@id/localityList" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/view" />
+    <TextView android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_circle_found" android:layout_centerInParent="true" />
+</RelativeLayout>

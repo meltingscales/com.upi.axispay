@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/circle_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/black_button_color" android:id="@id/text_bankname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22b" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22b" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_22b" android:text="@string/axis_bank" android:layout_toRightOf="@id/bank_logo" android:layout_centerVertical="true" />
+    <View android:id="@id/view" android:background="@color/bank_row" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_below="@id/text_bankname" />
+</RelativeLayout>

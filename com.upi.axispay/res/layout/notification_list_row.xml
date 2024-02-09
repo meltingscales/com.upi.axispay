@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/card_bg" android:padding="@dimen/APKTOOL_DUMMY_22c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22c" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22c" android:layout_marginRight="@dimen/APKTOOL_DUMMY_22c"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/transaction_list_detail_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.pkmmte.view.CircularImageView android:id="@id/tran_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/APKTOOL_DUMMY_22c" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:layout_marginRight="@dimen/APKTOOL_DUMMY_229" android:layout_weight="0.5" android:layout_toRightOf="@id/tran_icon">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                    <TextView android:id="@id/tran_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kushal Doshi" style="@style/SubTitleStyleBlack" />
+                    <TextView android:id="@id/tran_type" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text=" has sent you a payment request \n of " android:singleLine="true" style="@style/SubTitleStyleBlack" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/APKTOOL_DUMMY_263" />
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_251" android:textStyle="bold" android:id="@id/tran_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22e" android:text="6000" style="@style/UPITextView" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/text_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f9" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="02 days ago" android:layout_below="@id/dividerBottom" style="@style/SubTitleStyleBlackBold" />
+    <View android:id="@id/dividerBottom" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_f9" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:layout_below="@id/transaction_list_detail_box" />
+</RelativeLayout>

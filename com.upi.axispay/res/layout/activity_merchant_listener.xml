@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_pay" android:layout_centerInParent="true">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/APKTOOL_DUMMY_229">
+            <LinearLayout android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/APKTOOL_DUMMY_229">
+                <TextView android:textColor="@color/colorPrimary" android:layout_gravity="center" android:id="@id/payee_app_name" android:background="@color/recycler_background" android:padding="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pay_request" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+                <TextView android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="@string/app_id" />
+                <TextView android:textColor="@color/colorPrimary" android:id="@id/pay_app_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:text="@string/no" style="@style/UPITextView" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+                <TextView android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="@string/amount" />
+                <TextView android:textColor="@color/black" android:id="@id/pay_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:text="@string/no" style="@style/UPITextView" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+                <TextView android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="@string/payee_name" />
+                <TextView android:textColor="@color/black" android:id="@id/payee_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:text="@string/no" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+                <TextView android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="@string/transcaction_reference" />
+                <TextView android:textColor="@color/black" android:id="@id/pay_refno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:text="@string/no" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+                <TextView android:textColor="@color/grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="@string/transaction_remarks" />
+                <TextView android:textColor="@color/black" android:id="@id/pay_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_229" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22e" android:text="@string/no" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_pay" android:background="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:tint="@color/white" android:text="@string/pay" android:layout_alignParentBottom="true" />
+</RelativeLayout>

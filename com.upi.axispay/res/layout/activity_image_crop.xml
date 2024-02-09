@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:gravity="right" android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:navigationIcon="?homeAsUpIndicator" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="@string/reset" style="@style/AppPlainButton" />
+            <Button android:id="@id/btn_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="@string/done" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:background="@color/backgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <io.togoto.imagezoomcrop.photoview.PhotoView android:id="@id/iv_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        <io.togoto.imagezoomcrop.cropoverlay.CropOverlayView android:id="@id/crop_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guideLines="true" app:marginSide="@dimen/APKTOOL_DUMMY_228" app:marginTop="@dimen/APKTOOL_DUMMY_227" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_move_resize_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/move_resize_crop_picture" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="@dimen/APKTOOL_DUMMY_229" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_container">
+            <io.togoto.imagezoomcrop.photoview.RotationSeekBar android:id="@id/bar_rotation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:layout_gravity="left" android:id="@id/btn_undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="@string/undo" style="@style/AppPlainButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_227" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textStyle="bold" android:id="@id/btnRetakePic" android:background="@drawable/background_button_dark_rounded" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:text="@string/retake_pic" android:layout_weight="3.0" style="@style/AppRaisedButton" />
+            <Button android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textStyle="bold" android:id="@id/btnFromGallery" android:background="@drawable/background_button_dark_rounded" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_228" android:layout_marginRight="@dimen/APKTOOL_DUMMY_228" android:text="@string/from_gallery" android:layout_weight="3.0" style="@style/AppRaisedButton" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

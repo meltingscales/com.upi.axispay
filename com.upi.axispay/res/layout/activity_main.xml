@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/app_bar_home" />
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="fill_parent" android:nestedScrollingEnabled="true" android:scrollIndicators="none">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/drawer" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/adapter_drawer" />
+            <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@id/nav_view" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/drawer" app:itemIconTint="@android:color/transparent" app:itemTextColor="@color/black">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@id/footer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/adapter_footer" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/menuId" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffb5b5b5" android:dividerHeight="1.0dip" android:layout_above="@id/footer" />
+                </RelativeLayout>
+            </com.google.android.material.navigation.NavigationView>
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

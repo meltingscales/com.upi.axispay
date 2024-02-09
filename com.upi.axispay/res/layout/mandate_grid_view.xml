@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bank_item" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginRight="@dimen/APKTOOL_DUMMY_229" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_229" android:weightSum="2.0" android:translationZ="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/text_counter" android:background="@drawable/circle_primary_dark" android:layout_width="@dimen/APKTOOL_DUMMY_22a" android:layout_height="@dimen/APKTOOL_DUMMY_22a" android:layout_marginTop="-10.0dip" android:layout_marginRight="@dimen/APKTOOL_DUMMY_229" android:text="0" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22b">
+        <ImageView android:id="@id/icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/APKTOOL_DUMMY_56" />
+        <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textStyle="bold" android:id="@id/text_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="Create New" />
+        <ImageView android:id="@id/image_dash" android:background="@color/grey" android:layout_width="15.0dip" android:layout_height="2.0dip" android:layout_marginTop="@dimen/APKTOOL_DUMMY_231" android:layout_below="@id/text_date" />
+    </LinearLayout>
+</RelativeLayout>

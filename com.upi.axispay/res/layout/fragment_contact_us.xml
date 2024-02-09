@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/button_create" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/APKTOOL_DUMMY_22b">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/contact_us_layout" android:padding="@dimen/APKTOOL_DUMMY_227" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/APKTOOL_DUMMY_22d" android:layout_marginRight="@dimen/APKTOOL_DUMMY_22d" android:layout_weight="0.0">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_info" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/first_toll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229">
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24f" android:textColor="@color/colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cust_care1" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorTextSecondary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/toll_free" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/second_toll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229">
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24f" android:textColor="@color/colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cust_care2" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorTextSecondary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/toll_free" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:text="axispay@support.com" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/APKTOOL_DUMMY_228">
+                <TextView android:textSize="@dimen/APKTOOL_DUMMY_22b" android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228" android:text="@string/problem_facing" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_style" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229">
+                    <Spinner android:layout_gravity="center_vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_229" android:layout_marginRight="@dimen/APKTOOL_DUMMY_227" android:layout_marginBottom="@dimen/APKTOOL_DUMMY_229" android:src="@drawable/down_arrow_mdpi" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/APKTOOL_DUMMY_228">
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_22b" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_screenshots" />
+                    <TextView android:textSize="@dimen/APKTOOL_DUMMY_24d" android:textColor="@color/colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/optional" />
+                </LinearLayout>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center_horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="@dimen/APKTOOL_DUMMY_228" android:src="@drawable/APKTOOL_DUMMY_24a" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:elevation="8.0dip" app:fabSize="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/APKTOOL_DUMMY_24b" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="end" android:id="@id/button_create" android:background="@color/colorPrimaryDark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentBottom="true" android:textAllCaps="true" />
+</RelativeLayout>
