@@ -12,6 +12,10 @@ TODO
 
 TODO
 
+### jadx
+
+- https://upiuat.axisbank.co.in/v1/ shows up in an XML file, it's a web API
+
 ## Commands
 
 ```
