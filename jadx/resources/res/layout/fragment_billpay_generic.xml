@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fragment_connection" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/layout_indicator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="100dp">
+            <com.upi.axispay.custom.CustomViewPager android:id="@+id/pager" android:background="@color/home_background" android:layout_width="match_parent" android:layout_height="0x7f0702ac" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <com.viewpagerindicator.CirclePageIndicator android:id="@+id/dots" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:centered="true" app:fillColor="@color/white" app:pageColor="@color/grey" app:snap="false"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_white_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f0700f5" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f070228" android:layout_below="@+id/layout_indicator" android:translationZ="18dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/billpay_input" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f070229"/>
+            <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/button_proceed" android:background="@drawable/background_button_dark_rounded" android:paddingLeft="0x7f070228" android:paddingRight="0x7f070228" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0x7f070228" android:text="@string/get_bill" android:textAllCaps="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f070228" android:layout_below="@+id/recharge_input" android:translationZ="18dp">
+            <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/text_recent_transactions" android:padding="0x7f070229" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022e" android:text="@string/mobile_recharge"/>
+            <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.upi.axispay.custom.NonScrollListView android:orientation="vertical" android:id="@+id/recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f07022c"/>
+            <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_view" android:padding="0x7f070228" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_transaction_found" style="@style/UPITextView"/>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/pager_tab" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabTextAppearance="@style/TabTextAppearance"/>
+            <com.upi.axispay.custom.CustomViewPager android:id="@+id/pager_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/pager_tab1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabTextAppearance="@style/TabTextAppearance"/>
+            <com.upi.axispay.custom.CustomViewPager android:id="@+id/pager_list1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

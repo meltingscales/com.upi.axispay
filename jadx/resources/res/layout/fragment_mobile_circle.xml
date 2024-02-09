@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f07022a" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f070228" android:layout_below="@+id/stepper_indicator" android:translationZ="18dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/search_layout" android:padding="0x7f07022b" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="0x7f07022e" android:src="0x7f080269"/>
+        <EditText android:textSize="0x7f07024b" android:textColorHint="@color/colorTextSecondary" android:id="@+id/search_locality" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f070229" android:hint="@string/search_locality" android:maxLines="1" android:singleLine="true" android:imeOptions="actionDone"/>
+    </LinearLayout>
+    <View android:id="@+id/view" android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/search_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="5dp" android:scrollbarThumbVertical="@color/grey" android:id="@+id/localityList" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view"/>
+    <TextView android:id="@+id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_circle_found" android:layout_centerInParent="true"/>
+</RelativeLayout>

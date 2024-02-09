@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorPrimaryDark" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="0x7f07024b" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginTop="0x7f07022a" android:layout_marginBottom="0x7f070229" android:text="@string/welocome"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/white" android:id="@+id/drawer_listitem_tv_profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:text="@string/name"/>
+            <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/drawer_listitem_tv_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginBottom="0x7f070229"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:text="@string/language" android:layout_weight="0.8" android:layout_marginStart="11dp"/>
+        <RelativeLayout android:id="@+id/layout_select_language" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2">
+            <Spinner android:gravity="end" android:id="@+id/spinner_select_language" android:background="@color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/select_language" android:layout_toLeftOf="@+id/image_select" android:layout_centerVertical="true" android:textAlignment="textEnd" android:overlapAnchor="false"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_select" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f070228" android:src="0x7f0801d7" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/view" android:background="@color/text_single_row" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tool_bar_layout" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/back_arrow" android:padding="0x7f07022c" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="0x7f070227" android:src="@drawable/back_white_arrow"/>
+        <ImageView android:id="@+id/toolbar_logo_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="0x7f070227" android:src="0x7f080063"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/zbarScannerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tool_bar_layout">
+        <com.upi.axispay.barcode.ScannerOverlay android:id="@+id/graphicOverlay" android:background="#44000000" android:layout_width="match_parent" android:layout_height="match_parent" app:line_color="#7323dc" app:line_speed="6" app:line_width="4" app:square_height="250" app:square_width="250"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/footer_bar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="0x7f07024d" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compatible_bharat_qr"/>
+        <ImageView android:gravity="center_vertical" android:paddingLeft="0x7f070229" android:paddingRight="0x7f07022e" android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/bharat_qr"/>
+        <ImageView android:gravity="center_vertical" android:paddingLeft="0x7f07022e" android:layout_width="wrap_content" android:layout_height="45dp" android:src="0x7f0801bb"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/galley" android:visibility="visible" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="0x7f070227" android:layout_marginRight="0x7f070229" android:layout_marginBottom="0x7f070227" android:src="@drawable/icon_galarry" android:layout_toLeftOf="@+id/flash" android:layout_above="@+id/footer_bar"/>
+    <ImageView android:id="@+id/flash" android:visibility="visible" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="0x7f070227" android:src="@drawable/flash_off" android:layout_above="@+id/footer_bar" android:layout_alignParentRight="true"/>
+    <TextView android:gravity="center" android:id="@+id/no_permission_warning" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/permissions_warning_camera"/>
+</RelativeLayout>

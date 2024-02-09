@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="0x7f07024e" android:textColor="@color/secondary_text" android:gravity="right" android:layout_gravity="right" android:id="@+id/version" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0x7f0700f5" android:text="" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ScrollView android:id="@+id/login_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/version" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="0x7f070220" android:layout_height="0x7f0700fe" android:layout_marginTop="0x7f070227" android:src="@drawable/bhim_axis_logo_01"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/login_layout" android:background="@drawable/rounded_white_stroke_background" android:paddingLeft="0x7f070229" android:paddingTop="0x7f07022d" android:paddingRight="0x7f070229" android:paddingBottom="0x7f07022f" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f070229" android:layout_marginTop="0x7f0700f6" android:layout_marginRight="0x7f070229" android:translationZ="0x7f07022b">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimary" android:gravity="center" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0x7f07022d" android:text="@string/login_edittext_hint"/>
+                <com.upi.axispay.custom.PinEntryView android:layout_gravity="center_horizontal" android:id="@+id/pin_entry_colors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0x7f07022d" app:accentType="character" app:accentWidth="0x7f07022c" app:digitBackground="@drawable/login_background" app:digitSpacing="0x7f070229" app:digitTextColor="@color/edit_color" app:digitTextSize="0x7f07024b" app:digitWidth="0x7f0700f7" app:mask="*" app:numDigits="6" app:pinAccentColor="@color/edit_color" app:pinInputType="number"/>
+                <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0x7f07022d">
+                    <EditText android:gravity="center" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070229" android:layout_marginRight="0x7f070229" android:maxLength="@integer/minlength_debit_pin" android:layout_weight="1" android:inputType="numberPassword"/>
+                    <EditText android:gravity="center" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070229" android:maxLength="@integer/minlength_debit_pin" android:layout_weight="1" android:inputType="numberPassword"/>
+                    <EditText android:gravity="center" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070229" android:maxLength="@integer/minlength_debit_pin" android:layout_weight="1" android:inputType="numberPassword"/>
+                    <EditText android:gravity="center" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070229" android:maxLength="@integer/minlength_debit_pin" android:layout_weight="1" android:inputType="numberPassword"/>
+                    <EditText android:gravity="center" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070229" android:maxLength="@integer/minlength_debit_pin" android:layout_weight="1" android:inputType="numberPassword"/>
+                    <EditText android:gravity="center" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070229" android:maxLength="@integer/minlength_debit_pin" android:layout_weight="1" android:inputType="numberPassword"/>
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/burgundy_underline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070229">
+                    <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/login_forgot_passcode" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/forgot_passcode" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/qr_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f07022a">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp">
+                    <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/login_register" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/login_as_diff_user"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f0700f3" android:layout_alignParentRight="true">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/generate_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070229" android:layout_weight="1" android:layout_alignParentRight="true">
+                        <ImageView android:layout_gravity="center" android:id="@+id/button_request" android:background="0x7f0800ef" android:layout_width="50dp" android:layout_height="50dp"/>
+                        <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="0x7f070229" android:text="@string/generate_qr"/>
+                    </LinearLayout>
+                    <View android:background="@color/grey" android:layout_width="0x7f0700f6" android:layout_height="60dp" android:layout_marginLeft="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_below="@+id/layoutRequest"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/scan_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:id="@+id/button_send" android:background="0x7f080268" android:layout_width="50dp" android:layout_height="50dp"/>
+                        <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:text="@string/scan_qr_pay"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/dummy_layout" android:visibility="gone" layout="@layout/dummy_home_layout"/>
+</RelativeLayout>

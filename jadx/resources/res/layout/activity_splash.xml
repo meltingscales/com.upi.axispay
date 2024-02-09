@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/outer_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/logo_layout" android:background="#98144d" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/splash_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0x7f070227" android:src="@drawable/bhim_axis_logo_02"/>
+    </LinearLayout>
+</LinearLayout>

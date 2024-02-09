@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/home_background1" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:animateLayoutChanges="true">
+    <FrameLayout android:id="@+id/fragment_connection" android:layout_width="match_parent" android:layout_height="0x7f070267" android:layout_alignParentTop="true"/>
+    <androidx.percentlayout.widget.PercentRelativeLayout android:id="@+id/per_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/layout_bottom" android:layout_below="@+id/fragment_connection" android:animateLayoutChanges="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/pending_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_marginTop="0x7f070229" app:layout_heightPercent="20%">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="0x7f07022c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070227" android:layout_marginRight="0x7f07022b">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pending_requests" android:layout_centerInParent="true"/>
+                <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/text_counter" android:background="@drawable/circle_primary_dark" android:layout_width="0x7f07022a" android:layout_height="0x7f07022a" android:layout_marginLeft="0x7f070229" android:text="0"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="0x7f07022c" android:paddingRight="0x7f070229" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070227" android:layout_marginRight="0x7f07022b">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/text_pending_request" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="0.7" style="@style/SubTitleStyleBlack"/>
+                <TextView android:textSize="0x7f07024d" android:gravity="right" android:layout_gravity="center" android:id="@+id/text_pending_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.3" style="@style/SubTitleStyleBlack"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/account_layout" android:layout_width="match_parent" android:layout_below="@+id/pending_layout" app:layout_heightPercent="48%">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/pager_acc_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+            <ProgressBar android:id="@+id/account_loader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_view" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f070228" android:translationZ="0x7f07022e">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f070229">
+                    <ImageView android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/add_acc_home"/>
+                    <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_account"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_recharge" android:background="@color/white" android:layout_width="match_parent" android:layout_marginBottom="0x7f070229" android:layout_below="@+id/account_layout" app:layout_heightPercent="32%">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:paddingTop="0x7f07022e" android:paddingBottom="0x7f07022e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070227" android:layout_marginRight="0x7f07022b" android:text="@string/utility_payments"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/billpay_list" android:paddingBottom="0x7f07022e" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_bottom" android:background="@color/white" android:paddingTop="0x7f070229" android:paddingBottom="0x7f07022e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_add_account" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+            <ImageView android:layout_gravity="center" android:id="@+id/button_send" android:background="0x7f080058" android:layout_width="28dp" android:layout_height="23dp"/>
+            <TextView android:textSize="0x7f070250" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:text="@string/add_account"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_bill_payment" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:background="0x7f0801e7" android:layout_width="28dp" android:layout_height="23dp"/>
+            <TextView android:textSize="0x7f070250" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:text="@string/manage_beneficiary_home"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_transaction" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/image_send" android:background="@drawable/view_transaction" android:layout_width="28dp" android:layout_height="23dp"/>
+            <TextView android:textSize="0x7f070250" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:text="@string/view_transactions"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_scan_pay" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+            <ImageView android:layout_gravity="center" android:background="0x7f080267" android:layout_width="28dp" android:layout_height="23dp"/>
+            <TextView android:textSize="0x7f070250" android:textColor="@color/secondary_text" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="0x7f07022e" android:text="@string/scan_pay"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/view" android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_above="@+id/layout_bottom"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+package com.crashlytics.android.core;
+
+/* compiled from: AxisPay */
+/* loaded from: classes.dex */
+public interface FileLogStore {
+    void closeLogFile();
+
+    void deleteLogFile();
+
+    ByteString getLogAsByteString();
+
+    byte[] getLogAsBytes();
+
+    void writeToLog(long j, String str);
+}

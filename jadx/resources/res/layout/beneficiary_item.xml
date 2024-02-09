@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/card_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bene_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.pkmmte.view.CircularImageView android:id="@+id/contact_profile_pic" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_marginBottom="0x7f070228"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_weight="0.6">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/contact_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chinmayee Gurjal" android:maxLines="1"/>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/grey" android:id="@+id/contact_nickname" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:id="@+id/contact_vpa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022c" android:text="chin12@axisbank"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0x7f070228">
+            <ImageView android:layout_gravity="center" android:id="@+id/favourite_icon" android:layout_width="20dp" android:layout_height="match_parent" android:src="0x7f0800e1"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/contact_delete" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="0x7f070228" android:src="0x7f0800ca"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

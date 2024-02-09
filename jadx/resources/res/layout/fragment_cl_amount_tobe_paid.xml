@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022b" android:layout_marginTop="0x7f0700f5" android:layout_marginRight="0x7f07022b" android:layout_marginBottom="0x7f07022b" android:translationZ="18dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070227">
+        <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228" android:text="@string/current_billed_amount"/>
+        <TextView android:textSize="0x7f07024b" android:textColor="@color/colorPrimaryDark" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228" android:text="₹ 3000"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228">
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/side_menu_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/minimum_amount_due" android:layout_weight="0.7"/>
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/side_menu_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="1000" android:layout_weight="0.3"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228">
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/side_menu_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/due_date" android:layout_weight="0.7"/>
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/side_menu_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="04-10-2018" android:layout_weight="0.3"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/colorPrimary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/config" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Config"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.upi.axispay.custom.CustomViewPagerr android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <RelativeLayout android:orientation="horizontal" android:padding="0x7f07022e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0x7f0700f3" android:layout_alignParentBottom="true">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/skip" android:padding="0x7f070228" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip" android:layout_alignParentBottom="true" android:layout_marginStart="0x7f0700f5" android:layout_alignParentStart="true"/>
+            <com.viewpagerindicator.CirclePageIndicator android:gravity="center" android:id="@+id/dots" android:padding="0x7f070228" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:centered="true" app:fillColor="@color/white" app:pageColor="@color/grey" app:radius="5dp" app:snap="false"/>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/next" android:padding="0x7f070228" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" android:layout_alignParentBottom="true" android:textAllCaps="true" android:layout_marginEnd="0x7f0700f5" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="0x7f07024f" android:textColor="@color/white" android:gravity="center" android:id="@+id/tut_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0x7f07022f" android:text="" android:layout_above="@+id/next" android:layout_centerHorizontal="true" android:textAllCaps="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/outer_layout" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="200dp" android:layout_height="100dp" android:src="@drawable/bhim_axis_logo_01"/>
+    <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022b" android:text="Scan and Pay using UPI App"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_qr_code" android:layout_width="250dp" android:layout_height="250dp" android:layout_marginTop="0x7f070227"/>
+    <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f0700f3" android:text="QR Code Details:"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229">
+        <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UPI ID :  "/>
+        <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:ellipsize="marquee" android:id="@+id/vpa_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="abc@axisbank"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="0x7f070228" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amount"/>
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_gravity="end" android:id="@+id/amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:text="N/A"/>
+        </LinearLayout>
+        <View android:layout_gravity="center" android:background="@color/colorTextSecondary" android:layout_width="0.5dp" android:layout_height="30dp"/>
+        <LinearLayout android:orientation="vertical" android:padding="0x7f070228" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remark"/>
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:ellipsize="marquee" android:layout_gravity="start" android:id="@+id/remarks_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:text="test"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

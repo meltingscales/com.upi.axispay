@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <ImageView android:id="@+id/bank_logo" android:visibility="gone" android:layout_width="0x7f070227" android:layout_height="0x7f070227" android:layout_marginLeft="0x7f070227" android:layout_marginRight="0x7f070228" android:src="0x7f080070" android:layout_centerVertical="true"/>
+    <TextView android:textSize="0x7f07024d" android:id="@+id/text_bankname" android:paddingLeft="0x7f070231" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/axis_bank" android:maxLines="1" android:layout_toRightOf="@+id/bank_logo" android:layout_centerVertical="true" style="@style/TextViewNormalStyle"/>
+    <View android:id="@+id/view" android:background="@color/text_single_row" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

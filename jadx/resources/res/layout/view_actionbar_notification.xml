@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/actionitem_img_icon_bell" android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="0x7f080230" android:layout_centerInParent="true"/>
+    <TextView android:textSize="6sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/text_counter" android:background="@drawable/notification_round_empty" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="0x7f07022e" android:layout_marginRight="0x7f07022e" android:text="0" android:layout_alignTop="@+id/actionitem_img_icon_bell" android:layout_alignRight="@+id/actionitem_img_icon_bell"/>
+</RelativeLayout>

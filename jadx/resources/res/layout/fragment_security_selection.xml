@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228" android:translationZ="18dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070227" android:layout_marginRight="0x7f070227">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="160dp" android:layout_height="60dp" android:src="@drawable/bhim_axis_logo_01"/>
+                <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/security_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" android:text="@string/secutiry_title" android:fontFamily="@font/fonts"/>
+                <RadioGroup android:theme="@style/MyRadioButton" android:id="@+id/security_selection" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:textSize="0x7f07024d" android:textStyle="bold" android:id="@+id/security_option1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" android:text="@string/security_option1"/>
+                    <TextView android:textSize="0x7f07024e" android:textColor="@color/black" android:id="@+id/security_option_text1" android:paddingLeft="0x7f07022d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070231" android:text="@string/secutiry_option1_desc"/>
+                    <RadioButton android:textSize="0x7f07024d" android:textStyle="bold" android:id="@+id/security_option2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" android:text="@string/security_option2"/>
+                    <TextView android:textSize="0x7f07024e" android:textColor="@color/black" android:id="@+id/security_option_text2" android:paddingLeft="0x7f07022d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070231" android:text="@string/secutiry_option2_desc"/>
+                </RadioGroup>
+            </LinearLayout>
+            <Button android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/btn_next1" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" android:text="@string/next" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/button_create" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f07022b">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/contact_us_layout" android:padding="0x7f070227" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f07022d" android:layout_marginRight="0x7f07022d" android:layout_weight="0">
+                <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_info"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/first_toll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229">
+                    <TextView android:textSize="0x7f07024f" android:textColor="@color/colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cust_care1"/>
+                    <TextView android:textSize="0x7f07024d" android:textColor="@color/colorTextSecondary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/toll_free"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/second_toll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229">
+                    <TextView android:textSize="0x7f07024f" android:textColor="@color/colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cust_care2"/>
+                    <TextView android:textSize="0x7f07024d" android:textColor="@color/colorTextSecondary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/toll_free"/>
+                </LinearLayout>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:text="axispay@support.com"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f070228">
+                <TextView android:textSize="0x7f07022b" android:textStyle="bold" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070228" android:text="@string/problem_facing"/>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/edittext_style" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229">
+                    <Spinner android:layout_gravity="center_vertical" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:layout_marginRight="0x7f070227" android:layout_marginBottom="0x7f070229" android:src="@drawable/down_arrow_mdpi"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070228">
+                    <TextView android:textSize="0x7f07022b" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_screenshots"/>
+                    <TextView android:textSize="0x7f07024d" android:textColor="@color/colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/optional"/>
+                </LinearLayout>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center_horizontal" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="0x7f070228" android:src="0x7f08024a" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:elevation="8dp" app:fabSize="normal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/button_create" android:background="@color/colorPrimaryDark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentBottom="true" android:textAllCaps="true"/>
+</RelativeLayout>

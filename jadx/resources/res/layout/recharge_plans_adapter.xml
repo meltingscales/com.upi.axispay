@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f080070"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.6">
+        <TextView android:textSize="0x7f07024d" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9666799064"/>
+        <TextView android:textSize="0x7f07024d" android:id="@+id/tv2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="120mb"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="0x7f07024d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="validity: "/>
+            <TextView android:textSize="0x7f07024d" android:id="@+id/tv3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="24days"/>
+        </LinearLayout>
+        <TextView android:textSize="0x7f07024d" android:id="@+id/tv4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Last recharge on 26/08/2017"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <TextView android:layout_gravity="center" android:background="@drawable/rupee_background" android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="220"/>
+    </LinearLayout>
+</LinearLayout>

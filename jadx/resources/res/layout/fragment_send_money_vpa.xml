@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="0x7f070229">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_edit" android:background="@drawable/bottom_corner_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginRight="0x7f070228">
+                <TextView android:textSize="0x7f07024d" android:gravity="center" android:id="@+id/text_intro" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070229" android:text="@string/no_existing_upi_contacts"/>
+                <com.upi.axispay.custom.FloatingInputLayout android:id="@+id/edit_vpa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f07024d" android:hint="@string/enter_upi_id" android:digits="@string/alphanumeric_entries" app:ffieldHint="@string/enter_upi_id"/>
+                <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/button_verify" android:background="@drawable/background_button_dark_rounded" android:padding="0x7f070229" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginBottom="0x7f070228" android:minHeight="0dp" android:text="@string/verify" android:layout_below="@+id/input_layout_username" android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_list" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f070228" android:layout_below="@+id/layout_edit" android:translationZ="0x7f070229">
+                <com.upi.axispay.custom.NonScrollListView android:id="@+id/vpa_list" android:background="@color/white" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

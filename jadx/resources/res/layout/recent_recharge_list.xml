@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.upi.axispay.custom.NonScrollListView android:orientation="vertical" android:id="@+id/recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f07022c"/>
+    <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_view" android:padding="0x7f070228" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_transaction_found" style="@style/UPITextView"/>
+</LinearLayout>

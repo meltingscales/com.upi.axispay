@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/connection_text_linear" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/con_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/conn_title" android:fontFamily="sans-serif-medium" android:textAlignment="center"/>
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/con_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="@string/conn_details_text" android:inputType="textMultiLine" android:fontFamily="sans-serif-medium" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/connection_button_linear" android:background="@drawable/bottom_round_corners" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <androidx.appcompat.widget.AppCompatButton android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/exit_unsecure_btn" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exit" android:layout_weight="1"/>
+        <View android:background="@color/colorAccent" android:layout_width="2dp" android:layout_height="match_parent"/>
+        <androidx.appcompat.widget.AppCompatButton android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/continue_btn" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/continue_str" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

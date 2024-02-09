@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/outer_layout" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="200dp" android:layout_height="100dp" android:src="@drawable/bhim_axis_logo_01"/>
+    <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022b" android:text="To receive money scan this QR"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_qr_code" android:layout_width="250dp" android:layout_height="250dp" android:layout_marginTop="0x7f070227"/>
+</LinearLayout>

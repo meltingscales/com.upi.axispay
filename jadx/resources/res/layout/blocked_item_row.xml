@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/card_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022c">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bene_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.pkmmte.view.CircularImageView android:id="@+id/contact_profile_pic" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_marginBottom="0x7f07022e"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_weight="0.6">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:id="@+id/text_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="venkat@axisbank"/>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/grey" android:id="@+id/text_vpa" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AXISXXXXXXXXXXX645161"/>
+            <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/grey" android:id="@+id/contact_vpa" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022c" android:text="1234-5678-9012-3456"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="0x7f07024b" android:textColor="@color/white" android:layout_gravity="end" android:id="@+id/button_unblockk" android:background="@drawable/background_button_dark_rounded" android:paddingLeft="0x7f07022d" android:paddingTop="0x7f07022e" android:paddingRight="0x7f07022d" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_margin="0x7f070229" android:text="@string/unblock_b" android:layout_below="@+id/bene_item" android:layout_alignParentRight="true" android:textAllCaps="false"/>
+    <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/button_unblockk"/>
+    <ImageView android:id="@+id/contact_delete" android:padding="0x7f070229" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0800ca" android:layout_alignParentRight="true"/>
+</RelativeLayout>

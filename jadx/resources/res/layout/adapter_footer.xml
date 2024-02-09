@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/view" android:background="@color/grey_light" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginBottom="0x7f070229"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_help" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:background="0x7f0800f7" android:layout_width="20dp" android:layout_height="20dp"/>
+            <TextView android:textSize="0x7f07024e" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022c" android:text="@string/help"/>
+        </LinearLayout>
+        <View android:background="@color/grey" android:layout_width="0x7f0700f6" android:layout_height="40dp" android:layout_marginLeft="0x7f070229" android:layout_marginRight="0x7f070229"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_logout" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:background="0x7f0801df" android:layout_width="20dp" android:layout_height="15dp" android:layout_marginTop="5dp"/>
+            <TextView android:textSize="0x7f07024e" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:text="@string/menu_logou" android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/grey_light" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="0x7f070229"/>
+    <TextView android:textSize="0x7f07024d" android:textColor="@color/secondary_text" android:layout_gravity="center" android:id="@+id/version" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0x7f07022c" android:text="@string/version_string"/>
+</LinearLayout>

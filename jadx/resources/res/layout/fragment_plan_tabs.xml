@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f070228" android:translationZ="18dp">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/pager_tab" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="center" app:tabMode="scrollable" app:tabTextAppearance="@style/TabTextAppearance"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/pager_list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_above="@+id/note" android:layout_below="@+id/pager_tab" android:translationZ="18dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_nodata" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="0x7f07024f" android:id="@+id/empty_view" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_data_found"/>
+        <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/retry" android:background="@drawable/background_button_dark_rounded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/note" android:background="@drawable/rectangle_box" android:padding="0x7f07022c" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f070229" android:layout_alignParentBottom="true">
+        <TextView android:textSize="0x7f070252" android:padding="0x7f07022e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Note: Please check with your mobile operator for latest recharge plans"/>
+    </LinearLayout>
+</RelativeLayout>

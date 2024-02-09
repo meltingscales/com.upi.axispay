@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0x7f0700fb">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="0x7f070220" android:layout_height="0x7f07021f" android:layout_marginTop="0x7f070228" android:src="0x7f080061"/>
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070228" android:text="@string/reset_passcode"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f0700f5">
+            <com.upi.axispay.custom.PinFieldLayout android:id="@+id/enter_passcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022d" android:layout_marginRight="0x7f07022d" app:fieldHint="@string/enter_new_passcode" app:fieldIcon="@drawable/login_key"/>
+            <com.upi.axispay.custom.PinFieldLayout android:id="@+id/re_enter_passcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022d" android:layout_marginTop="0x7f070229" android:layout_marginRight="0x7f07022d" app:errText="@string/passcode_doesnt_match" app:fieldHint="@string/re_enter_passcode" app:fieldIcon="@drawable/login_key"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022d" android:layout_marginRight="0x7f07022d">
+            <CheckBox android:id="@+id/launcher_tc" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:layout_marginBottom="0x7f070228" android:checked="false" android:button="@drawable/checkbox_selector"/>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/colorTextSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070229" android:layout_marginTop="0x7f070229" android:layout_marginBottom="0x7f070228" android:text="@string/remember_me"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/btn_set_passcode" android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SET" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

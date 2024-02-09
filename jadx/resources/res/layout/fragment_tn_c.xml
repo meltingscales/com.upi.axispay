@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar_tnc"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView android:textSize="0x7f07024e" android:textColor="@color/black" android:autoLink="web" android:id="@+id/tnc_content" android:padding="0x7f070228" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:isScrollContainer="true"/>
+</LinearLayout>

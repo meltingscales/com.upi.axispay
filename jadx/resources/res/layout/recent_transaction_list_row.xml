@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/transaction_list_detail_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0x7f070229" android:layout_toRightOf="@+id/tran_icon" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/grey" android:id="@+id/text_head" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:text="Mobile Recharge for" android:layout_weight="1.2"/>
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/black_button_color" android:gravity="right" android:id="@+id/text_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070228" android:text="₹ 200" android:layout_weight="0.8"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_upi_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f07022e" android:layout_marginRight="0x7f070228" android:layout_below="@+id/text_head">
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/secondary_text" android:id="@+id/pay_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UPI ID "/>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/secondary_text" android:ellipsize="end" android:id="@+id/vpa_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070231" android:text=" 963258741" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f07022e" android:layout_marginRight="0x7f070228">
+            <TextView android:textSize="0x7f07024e" android:textColor="@color/secondary_text" android:layout_gravity="center" android:id="@+id/text_tran_status" android:paddingBottom="0x7f07022c" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/success" android:layout_weight="0.3" android:textAllCaps="true"/>
+            <TextView android:textSize="0x7f07024e" android:textColor="@color/grey" android:gravity="end" android:id="@+id/text_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.7" android:layout_below="@+id/layout_upi_id"/>
+        </LinearLayout>
+        <View android:background="@color/grey_dark" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070229" android:layout_marginRight="0x7f070228" android:layout_below="@+id/text_date"/>
+    </LinearLayout>
+</RelativeLayout>

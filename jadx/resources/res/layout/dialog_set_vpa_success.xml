@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/set_vpa_success_background" android:layout_width="match_parent" android:layout_height="200dp">
+    <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_marginRight="0x7f070228" android:text="@string/congratulations" style="@style/DialogHeading"/>
+    <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:id="@+id/success_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f0700f5" android:text="@string/account_linked" android:layout_below="@+id/dialog_title" android:layout_centerInParent="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:layout_below="@+id/success_message" android:layout_centerHorizontal="true">
+        <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_upiid" style="@style/SubTitleStyle"/>
+        <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:id="@+id/text_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hjhkjk@axisbank"/>
+    </LinearLayout>
+    <Button android:textSize="0x7f07024b" android:textColor="@color/white" android:id="@+id/button_done" android:background="@drawable/background_button_dark_rounded" android:layout_width="120dp" android:layout_height="35dp" android:layout_marginBottom="0x7f070228" android:text="@string/done" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false"/>
+</RelativeLayout>

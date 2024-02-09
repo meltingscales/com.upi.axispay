@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0x7f070228" android:translationZ="0x7f070228">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_proceed">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f070228">
+                <RelativeLayout android:id="@+id/layout_profile" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.pkmmte.view.CircularImageView android:id="@+id/profile_pic" android:layout_width="@dimen/friend_image_dia" android:layout_height="@dimen/friend_image_dia" android:src="0x7f080258" android:layout_centerInParent="true" app:border="true" app:border_color="@color/gradient_stroke" app:border_width="0dp" app:shadow="false"/>
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="-24dp" android:layout_marginTop="0x7f07022e" android:src="@drawable/write_icon" android:layout_toRightOf="@+id/profile_pic"/>
+                </RelativeLayout>
+                <TextView android:textSize="0x7f070253" android:textColor="@color/dark_color" android:id="@+id/drawer_listitem_tv_profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229">
+                    <TextView android:textSize="0x7f07024f" android:textColor="@color/grey_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_upi_id"/>
+                    <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_dark" android:id="@+id/upiId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070229" android:text="8892635336@axis"/>
+                </LinearLayout>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_dark" android:id="@+id/text_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070227" android:layout_marginTop="0x7f070228" android:layout_marginRight="0x7f070227" android:layout_marginBottom="0x7f070228">
+                <ImageView android:layout_gravity="center" android:id="@+id/qr_image" android:layout_width="200dp" android:layout_height="200dp"/>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_dark" android:layout_gravity="center" android:id="@+id/qr_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:text="@string/show_qr_to_receive"/>
+                <TextView android:textSize="0x7f07024b" android:textStyle="normal" android:textColor="@color/colorPrimary" android:layout_gravity="center" android:id="@+id/change_passcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:text="@string/menu_change_security"/>
+            </LinearLayout>
+            <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_dark" android:layout_gravity="center" android:id="@+id/logs_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022b" android:text="@string/access_logs"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

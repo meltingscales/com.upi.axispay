@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070227" android:translationZ="0x7f07022e">
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout" android:paddingBottom="0x7f070231" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/layout_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070229">
+            <ImageView android:id="@+id/image_bank" android:layout_width="25dp" android:layout_height="25dp" android:src="0x7f080070"/>
+            <TextView android:textSize="0x7f07024f" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center_vertical" android:id="@+id/text_bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070229" android:text="@string/bank_name"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_vpa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070231" android:layout_below="@+id/layout_image">
+            <TextView android:textSize="0x7f07024e" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/your_upi_id"/>
+            <TextView android:textSize="0x7f07024e" android:textColor="@color/black" android:ellipsize="end" android:id="@+id/account_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022c" android:text="" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_acc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070229" android:layout_marginBottom="0x7f07022b" android:layout_below="@+id/layout_vpa">
+            <TextView android:textSize="0x7f07024e" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_number"/>
+            <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/text_acc_no" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:id="@+id/text_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f07022b" android:text="@string/check_balance" android:layout_above="@+id/layout_buttons" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/amount_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f07022b" android:layout_above="@+id/layout_buttons" android:layout_alignParentRight="true">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="0x7f070254" android:textColor="@color/black" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0x7f070231" android:text="@string/check_balance"/>
+                <ImageView android:textSize="0x7f07024e" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_gravity="end" android:id="@+id/text_refresh_amount" android:layout_width="12dp" android:layout_height="15dp" android:src="@drawable/reload"/>
+            </LinearLayout>
+            <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_gravity="right" android:id="@+id/balance_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0x7f070227"/>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="0x7f070250" android:textColor="@color/colorTextSecondary" android:layout_gravity="end" android:id="@+id/balance_as_on" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_buttons" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginLeft="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f07022c" android:layout_below="@+id/layout_acc">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button_request" android:background="@drawable/background_button_dark_rounded" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="0x7f070229" android:src="0x7f080256"/>
+                <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/request" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="0x7f07022c" android:text="@string/request_caps" android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button_send" android:background="@drawable/background_button_dark_rounded" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="0x7f070229" android:layout_weight="1">
+                <ImageView android:gravity="center" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="0x7f070229" android:src="0x7f08026c"/>
+                <TextView android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/send" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="0x7f07022c" android:text="@string/send" android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/add_account" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layout" android:translationZ="0x7f07022e">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f070229">
+            <ImageView android:layout_width="45dp" android:layout_height="45dp" android:src="@drawable/add_acc_home"/>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_account"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

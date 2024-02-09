@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/button_confirm" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentBottom="true" style="@style/ButtonSingle"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_confirm" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f070228">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/text_intro">
+                <EditText android:textSize="0x7f07024d" android:textColorHint="@color/grey" android:id="@+id/edit_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f070228" android:hint="@string/enter_name" android:maxLength="@integer/max_account_no_lenght" android:digits="@string/alphanumeric_numbs" android:inputType="text" android:backgroundTint="@color/grey_dark" android:importantForAutofill="noExcludeDescendants"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/text_intro">
+                <EditText android:textSize="0x7f07024d" android:textColorHint="@color/grey" android:id="@+id/editaadhar_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228" android:hint="@string/ente_aadhar_number" android:maxLength="@integer/max_account_no_lenght" android:digits="@string/alphanumeric_numbs" android:inputType="number" android:backgroundTint="@color/grey_dark" android:importantForAutofill="noExcludeDescendants"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_contact" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginBottom="0x7f070228">
+                <CheckBox android:theme="@style/MyCheckBox" android:layout_gravity="center" android:id="@+id/favourite_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/make_favourite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

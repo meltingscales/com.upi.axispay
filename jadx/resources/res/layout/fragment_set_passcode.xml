@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228" android:translationZ="18dp">
+    <Button android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/btn_register" android:background="@color/colorDivider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/submit_new" android:layout_alignParentBottom="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/btn_register" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022a" android:layout_marginRight="0x7f07022a">
+                    <ImageView android:layout_width="160dp" android:layout_height="60dp" android:src="@drawable/bhim_axis_logo_01"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/step3" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f07022a" android:layout_marginTop="0x7f070227" android:layout_marginRight="0x7f07022a">
+                    <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="left" android:id="@+id/set_your_6digit_passcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" android:text="Set Your 6 Digit Passcode"/>
+                    <com.upi.axispay.custom.FloatingInputLayout android:id="@+id/enter_passcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" app:feditTextId="@+id/enter_name" app:ffieldHint="Set 6 digit passcode"/>
+                    <com.upi.axispay.custom.FloatingInputLayout android:id="@+id/confirm_pass" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" app:feditTextId="@+id/enter_email" app:ffieldHint="Re-enter 6 digit passcode"/>
+                </LinearLayout>
+                <Button android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/btn_set" android:background="@color/colorPrimary" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070227" android:text="Set" android:layout_alignParentBottom="true" android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

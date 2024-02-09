@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="0x7f07024f" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_plan_available" style="@style/UPITextView"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/plans_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+</RelativeLayout>

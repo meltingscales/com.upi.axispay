@@ -1,0 +1,55 @@
+[ {
+    "desc" : "Airtel DTH",
+    "maxIdLength" : "10",
+    "maxValue" : "9999",
+    "minIdLength" : "10",
+    "minValue" : "100",
+    "opCircleCode" : "ATVAI",
+    "opCode" : "ATV",
+    "prefix" : "3"
+  }, {
+    "desc" : "DISH TV - PAN INDIA",
+    "maxIdLength" : "11",
+    "maxValue" : "64490",
+    "minIdLength" : "11",
+    "minValue" : "10",
+    "opCircleCode" : "DTVAI",
+    "opCode" : "DTV",
+    "prefix" : "0"
+  }, {
+    "desc" : "SUN TV- PAN INDIA",
+    "maxIdLength" : "11",
+    "maxValue" : "10000",
+    "minIdLength" : "11",
+    "minValue" : "5",
+    "opCircleCode" : "STVAI",
+    "opCode" : "STV",
+    "prefix" : "4"
+  }, {
+    "desc" : "TATA D2H - PAN INDIA",
+    "maxIdLength" : "10",
+    "maxValue" : "30000",
+    "minIdLength" : "10",
+    "minValue" : "8",
+    "opCircleCode" : "TDHAI",
+    "opCode" : "TDH",
+    "prefix" : "1"
+  }, {
+    "desc" : "VIDEOCON D2H - PAN INDIA",
+    "maxIdLength" : "14",
+    "maxValue" : "65000",
+    "minIdLength" : "4",
+    "minValue" : "50",
+    "opCircleCode" : "VDHAI",
+    "opCode" : "VDH",
+    "prefix" : ""
+  }, {
+    "desc" : "Reliance BIG TV - PAN INDIA",
+    "maxIdLength" : "12",
+    "maxValue" : "10000",
+    "minIdLength" : "12",
+    "minValue" : "10",
+    "opCircleCode" : "BTVAI",
+    "opCode" : "BTV",
+    "prefix" : "2"
+  } ]

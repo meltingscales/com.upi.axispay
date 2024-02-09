@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="0x7f07024d" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/button_proceed" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f070229" android:text="@string/button_proceed" android:layout_alignParentBottom="true"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_proceed" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/outer_layout" android:background="@color/colorPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/back_arrow" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="0x7f070229" android:src="@drawable/back_white_arrow"/>
+                <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/verify_mobile_number"/>
+            </LinearLayout>
+            <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f0700f5" android:text="@string/verify_mobile_number" android:layout_below="@+id/outer_layout"/>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/layout_image" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f0700f5" android:layout_below="@+id/title">
+                <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/smart_phone_icon_ready"/>
+                <ImageView android:id="@+id/image_dot_verified" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="210dp" android:src="@drawable/green_tick_query_status" android:layout_alignBottom="@+id/image"/>
+            </RelativeLayout>
+            <TextView android:textSize="0x7f07024d" android:textColor="@color/secondary_text" android:gravity="center" android:id="@+id/text_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/mobile_verification_msg" android:layout_below="@+id/layout_image" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/mobile_number_input_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+91"/>
+                <EditText android:id="@+id/input_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:maxLength="10" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/permision_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070229">
+                <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:gravity="center" android:padding="0x7f070229" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/permission_denied"/>
+            </LinearLayout>
+            <TextView android:textSize="0x7f07024b" android:typeface="normal" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/msg" android:padding="0x7f070229" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/FORGOT_PASSCODE_SCREEN_MESSAGE" android:layout_below="@+id/text_msg" android:layout_alignParentLeft="true" android:fontFamily="sans-serif-condensed" android:layout_alignParentStart="true"/>
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f0700f5" android:layout_above="@+id/button_proceed" android:layout_below="@+id/text_msg">
+                <RadioGroup android:id="@+id/myRadioGroup" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_acc_num_vpa" android:padding="0x7f070229" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/account_pop_name" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f07022c" android:text="201654688944" android:singleLine="true" android:layout_weight="1" style="@style/UPITextView"/>
+        <TextView android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/account_pop_vpa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="0x7f07022c" android:text="abcd@xyz" android:singleLine="true" android:layout_weight="1" style="@style/UPITextView"/>
+    </LinearLayout>
+    <View android:id="@+id/view" android:background="@color/colorDivider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/layout_acc_num_vpa" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+</RelativeLayout>

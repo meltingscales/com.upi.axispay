@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/acc_list_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/btn_verify" android:background="@color/colorPrimaryDark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/proceed" android:layout_alignParentBottom="true"/>
+    <ListView android:id="@+id/languageList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_verify"/>
+</RelativeLayout>

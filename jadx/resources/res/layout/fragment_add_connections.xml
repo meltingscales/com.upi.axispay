@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/backgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup" android:background="@drawable/round_layout_boarder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_marginRight="0x7f070228" android:checkedButton="@null">
+        <RadioButton android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/button_vpa_connection" android:background="@drawable/round_left_selector" android:padding="0x7f070229" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/upi_id_contact" android:layout_weight="1"/>
+        <RadioButton android:textColor="#55dcf9" android:gravity="center" android:layout_gravity="center" android:id="@+id/button_ifsc_connection" android:background="@drawable/round_right_selector" android:padding="0x7f070229" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/ifsc_contact" android:layout_weight="1"/>
+    </RadioGroup>
+    <FrameLayout android:name="com.upi.axispay.fragment.MyConnectionsFragment" android:id="@+id/fragment_connection" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f070229"/>
+</LinearLayout>

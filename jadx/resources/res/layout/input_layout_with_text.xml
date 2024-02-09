@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/left_icon" android:paddingBottom="0x7f070231" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_above="@+id/input_line" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/left_icon">
+        <EditText android:textSize="0x7f07024b" android:id="@+id/input_view" android:background="@color/transparent" android:paddingTop="0x7f070231" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="" android:maxLines="1" android:singleLine="true" android:drawablePadding="0x7f070229" android:importantForAutofill="noExcludeDescendants"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <View android:id="@+id/input_line" android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/input_layout"/>
+    <TextView android:textSize="0x7f07024e" android:textColor="@color/colorAccent" android:id="@+id/right_text" android:padding="0x7f070229" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="text" android:layout_above="@+id/input_line" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="0x7f07024e" android:textColor="@color/red" android:id="@+id/err_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" android:layout_below="@+id/input_line" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/right_icon" android:padding="0x7f070229" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0800bb" android:layout_above="@+id/input_line" android:layout_alignParentRight="true"/>
+</RelativeLayout>

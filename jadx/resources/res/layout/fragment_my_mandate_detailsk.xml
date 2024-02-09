@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_payment_id" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/payment_id" android:layout_weight="0.8"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/text_payment_id" android:layout_width="0dp" android:layout_height="wrap_content" android:text="4545665465454" android:layout_weight="1.2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_start_date" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_below="@+id/layout_payment_id">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/start_date" android:layout_weight="0.8"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/text_start_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_end_date" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_below="@+id/layout_start_date">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/end_date" android:layout_weight="0.8"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/text_end_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_frequency" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_below="@+id/layout_end_date">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/debate_frequency" android:layout_weight="0.8"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/text_frequency" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/monthly" android:layout_weight="1.2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_no_debits" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_below="@+id/layout_frequency">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/no_of_debits" android:layout_weight="0.8"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/text_no_of_debits" android:layout_width="0dp" android:layout_height="wrap_content" android:text="2" android:layout_weight="1.2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_pending_debits" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_below="@+id/layout_no_debits">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/pending_debits" android:layout_weight="0.8"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/text_pending_debits" android:layout_width="0dp" android:layout_height="wrap_content" android:text="10" android:layout_weight="1.2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070228" android:layout_below="@+id/layout_pending_debits">
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/grey_dark" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/debits_on" android:layout_weight="0.8"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/text_debits_on" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/before_first_of_every_month" android:layout_weight="1.2"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

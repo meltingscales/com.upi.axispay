@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/rounded_white_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0x7f070228" android:translationZ="0x7f070228">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lv1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25">
+                <ImageView android:layout_gravity="center" android:id="@+id/img" android:background="@drawable/image_backgrond_before_clik" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f0801fd"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.75">
+                <TextView android:textSize="0x7f070228" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/operator_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginTop="0x7f070229" android:text="@string/vodafone_mobile_axisupi"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="0x7f07024d" android:textColor="@color/Black" android:id="@+id/operator_bill" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:text="Vodafone Mobile bill" android:layout_weight="0.7"/>
+                    <TextView android:textColor="@color/colorPrimaryDark" android:id="@+id/amount" android:layout_width="0dp" android:layout_height="wrap_content" android:text="2400" android:drawableLeft="@drawable/rupees_bur" android:layout_weight="0.3"/>
+                </LinearLayout>
+                <TextView android:textSize="0x7f07024d" android:id="@+id/date_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:text="02-11-2017"/>
+                <TextView android:textSize="0x7f07024d" android:textColor="@color/Green" android:id="@+id/verify_merchant" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:text="@string/verified_merchant"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/detailes_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/lv1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0x7f070228">
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_light" android:paddingLeft="0x7f070228" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="@string/start_date" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="01/11/2017" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_light" android:paddingLeft="0x7f070228" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="@string/end_date" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="10/11/2017" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_light" android:paddingLeft="0x7f070228" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="@string/debit_frequency" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="@string/monthly" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_light" android:paddingLeft="0x7f070228" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="@string/no_of_debits" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="10" android:maxLines="1" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="0x7f070228">
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/grey_light" android:paddingLeft="0x7f070228" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:text="@string/debit_on" android:maxLines="1" android:layout_weight="1"/>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:text="@string/before_first_of_every_month" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="0x7f07024b" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="0x7f070228" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:text="@string/remark"/>
+                <TextView android:textSize="0x7f07024b" android:textColor="@color/black" android:paddingLeft="0x7f070228" android:paddingRight="0x7f070228" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0x7f07022e" android:layout_marginBottom="0x7f070228" android:text="Transfer for the third loan payment of the farmian four more transfers left whih i will be doing in the consecutive months."/>
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginBottom="0x7f070228"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0x7f070228" android:layout_marginRight="0x7f070228" android:layout_marginBottom="0x7f070228">
+                <Button android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:background="@drawable/button_background_style" android:padding="0x7f07022c" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070231" android:text="@string/blocks" android:drawableLeft="0x7f0801fb" android:layout_weight="1"/>
+                <Button android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:background="@drawable/button_background_style" android:padding="0x7f07022c" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f070231" android:text="@string/decline" android:drawableLeft="0x7f0801fb" android:layout_weight="1"/>
+                <Button android:textSize="0x7f07024d" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:background="@drawable/button_background_style" android:padding="0x7f07022c" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0x7f07022e" android:text="@string/accept" android:drawableLeft="0x7f0801fb" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
