@@ -2,15 +2,29 @@
 
 ### gitleaks
 
-TODO
+No leaks found.
 
 ### apkurlgrep
 
-TODO
+- A LOT of URLs show up. At least 100 endpoints. They're probably related to <https://upiuat.axisbank.co.in/v1/>. I hope this company has a good API security program in place!
+
+/v1/bank/transactions/pay
+/v1/customer/accounts
+/v1/customer/accounts/mobreg
+/v1/customer/otp
+/v1/customer/accounts/remove
+/v1/customer/accounts/update
+/v1/authenticate
+/v1/bank/transactions/balanceinquiry/creditline
+...
+
+It also looks like they use DESede and AES CBC for some reason. They should make sure they're not using that encryption.
 
 ### Snyk SAST
 
-TODO
+10 High, 59 Mediums
+
+Hardcoded IVs, Uses Random.nextInt for seeding crypto, deserializes serialized untrusted data, and a handful of mediums.
 
 ### jadx
 
