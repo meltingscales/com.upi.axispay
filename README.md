@@ -8,6 +8,7 @@ No leaks found.
 
 - A LOT of URLs show up. At least 100 endpoints. They're probably related to <https://upiuat.axisbank.co.in/v1/>. I hope this company has a good API security program in place!
 
+```
 /v1/bank/transactions/pay
 /v1/customer/accounts
 /v1/customer/accounts/mobreg
@@ -17,6 +18,7 @@ No leaks found.
 /v1/authenticate
 /v1/bank/transactions/balanceinquiry/creditline
 ...
+```
 
 It also looks like they use DESede and AES CBC for some reason. They should make sure they're not using that encryption.
 
